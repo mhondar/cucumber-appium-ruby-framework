@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Reporte de Pruebas Automatizadas Wip</title><link rel="icon" href="https://reportbuilder.rajatthareja.com/rb.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/css/report.builder.min.css" rel="stylesheet">
+</head><body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script><header class="purple lighten-5">
+<div class="row purple lighten-1">
+<div class="col m6 hide-on-small-only">
+<h5 class="truncate white-text tooltipped" data-tooltip="Reporte de Pruebas Automatizadas Wip">Reporte de Pruebas Automatizadas Wip</h5>
+</div><div class="col m6 s12 purple lighten-1">
+<ul class="tabs purple lighten-1 row" style="overflow-x: hidden">
+<li class="tab col s3">
+<a class="purple lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+</li>
+<li class="tab col s3">
+<a class="purple lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+</li>
+<li class="tab col s3">
+<a class="purple lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+</li>
+<li class="tab col s3">
+<a class="purple lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<div id="g0f0s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@wip</div><h5>TC01 (49.107s)</h5>
+features/test/AUTOATENCION_CL_TC01.feature:3
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> Abierta la aplicacion de autoatencion RPOST &quot;AUTOATENCION_TC01&quot; (0.000s)</li>
+<li class="collection-item step passed">
+<b>When </b> En monitor configuro rut del empleador (2.269s)</li>
+<li class="collection-item step failed">
+<b>And </b> Guardo y salgo del monitor (30.233s)<pre>An element could not be located on the page using the given search parameters. (Selenium::WebDriver::Error::NoSuchElementError)
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+at AndroidUiautomator2Driver.findElOrEls (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+./features/page_objects/Monitor_page.rb:35:in `guardar_y_Salir&#39;
+./features/step_definitions/configuration_steps.rb:9:in `&quot;Guardo y salgo del monitor&quot;&#39;
+features/test/AUTOATENCION_CL_TC01.feature:6:in `And Guardo y salgo del monitor&#39;</pre>
+</li>
+<li class="collection-item step skipped">
+<b>And </b> Realizo click en digitar codigo de producto (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Ingreso numero de producto (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Realizo click en RCLUBES (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Ingreso codigo RCLUBES (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Realizo click en Ingresar Codigo de Descuento (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Ingreso Codigo de Descuento (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Realizo click en pagar (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Ingreso rut de comprador &quot;rut_cliente&quot; (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Selecciono tarjeta &quot;ripley_card&quot; (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Realizo click en Continuar (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Imprimo boleta (0.000s)</li>
+<li class="collection-item step skipped">
+<b>And </b> Realizo click en finalizar (0.000s)</li>
+<li class="collection-item step skipped">
+<b>Then </b> Verifico página de scan de productos presente (0.000s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();});
+</script>
+<main class="purple lighten-5">
+<div class="row"><div id="overview" class="col s12 purple lighten-5">
+<div class="row">
+<div class="col m4 s12">
+<canvas id="featuresDoughnut" width="400" height="400"></canvas>
+<table id="metaDataFeatures" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+<table id="metaDataScenarios" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<table id="metaData" class="bordered">
+<tbody>
+<tr><th>Total Time</th><td>49.107s</td></tr><tr>
+<th>device</th>
+<td>Android</td>
+</tr><tr>
+<th>environment</th>
+<td>QA</td>
+</tr></tbody>
+</table>
+</div>
+</div></div><div id="features" class="col s12 purple lighten-5 white-text">
+<ul class="featureList collapsible popout" data-collapsible="expandable">
+<li class="feature broken">
+<div class="collapsible-header purple lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;AUTOATENCION_CL_TC01&nbsp;(49.107s)
+</div><div class="collapsible-body purple lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario failed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
+<b>Scenario</b> TC01&nbsp;(49.107s)
+</a>
+</li></ul>
+</div>
+</li>
+</ul></div><div id="summary" class="col s12 purple lighten-5">
+<table id="summaryTable" class="bordered purple lighten-1 white-text" width="100%">
+<thead>
+<tr>
+<th class="hide-on-small-only">Feature</th>
+<th>Scenario</th>
+<th class="hide">Tags</th>
+<th>Status</th>
+<th class="hide-on-small-only">Error</th>
+</tr>
+</thead>
+<tbody><tr class="failed">
+<td class="hide-on-small-only">
+AUTOATENCION_CL_TC01
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s0">TC01</a>
+</td><td class="hide">
+@wip. 
+</td><td class="uppercase">
+failed
+</td><td class="hide-on-small-only">An element could not be located on the page using the given search parameters. (Selenium::WebDriver::Error::NoSuchElementError)</td></tr>
+</tbody>
+</table></div><div id="errors" class="col s12 purple lighten-5">
+<ul class="errorList collapsible popout" data-collapsible="expandable"><li class="error">
+<div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+<i class="material-icons">bug_report</i>An element could not be located on the page using the given search parameters. (Selenium::WebDriver::Error::NoSuchElementError)
+</div><div class="collapsible-body purple lighten-4">
+<ul class="collection failedScenarioList">
+<li class="collection-item failedScenario purple lighten-5 red-text">
+<i class="material-icons">highlight_off</i>&nbsp;<a class="modal-trigger red-text" href="#g0f0s0">TC01</a>
+</li>
+</ul>
+</div>
+</li>
+</ul></div>
+</div>
+</main><footer class="page-footer purple lighten-4">
+<div class="footer-copyright purple lighten-1">
+<div class="container">
+Happy Reporting!
+<a class="white-text text-lighten-4 right" href="https://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+</div>
+</div>
+</footer><script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/js/report.builder.min.js"></script></body>
+</html>

@@ -1,0 +1,48 @@
+{
+    "general": {
+        "btnBarCode": "text_barcode",
+        "txtDatos": "field_data",
+        "buttom_go_pay_cart": "buttom_go_pay_cart"
+    },
+    "scan_products": {
+        "textView4": "textView4"
+    },
+    "monitor": {
+        "change_employee": "change_employee",
+        "button_save_config": "button_save_config",
+        "btn_config":"btn_config"
+    },
+    "Resumen": {
+        "btn_r_club": "btn_r_club",
+        "btn_c_desc":"btn_coupon_desc"
+    },
+    "pago": {
+        "metodos_pago": {
+            "ripley_card": "ripley_card",
+            "ripley_debit_card": "ripley_debit_card",
+            "credit_card": "credit_card",
+            "debit_card": "debit_card"
+        },
+        "cuotas": [
+            "not_fee",
+            "fee_3",
+            "fee_6",
+            "fee_12",
+            "fee_18",
+            "fee_24",
+            "fee_36",
+            "custom_fee"
+        ],
+        "button_payment_continue":"button_payment_continue"
+    },
+    "step_3": {
+        "text_step_3": "text_step_3",
+        "txt_ticket_quantity": "txt_ticket_quantity",
+        "more_ticket": "more_ticket",
+        "less_ticket": "less_ticket",
+        "msg_compra_exitosa": "lottie_transbank",
+        "btn_print_ticket":"btn_print_ticket",
+        "btn_new_buy":"btn_new_buy"
+    }
+}
+

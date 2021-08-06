@@ -1,0 +1,10 @@
+source 'http://rubygems.org'
+
+gem  'appium_lib'
+gem 'report_builder'
+gem 'csv'
+gem 'json'
+gem 'yaml'
+gem 'fileutils'
+gem 'base64'
+gem 'aws-sdk-s3'

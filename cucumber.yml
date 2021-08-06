@@ -1,0 +1,14 @@
+#Work In Progress
+wip: --tags @wip REPORT=false PROJECT=Wip SCREENSHOT=false CLOSE=false
+
+# Geneacion de reportes sin screenshot 
+wip_rep: --tags @wip SCREENSHOT=true ATTACH=false REPORT=true PROJECT=Wip CLOSE=true --expand --format json --out ./features/reports/json/report_wip_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+# Geneacion de reportes con screenshot 
+wip_rep_img: --tags @wip SCREENSHOT=true ATTACH=true REPORT=true PROJECT=Wip CLOSE=true --expand --format json --out ./features/reports/json/report_wip_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#***********************************************************************************************************************************************************
+
+#AUTOATENCION
+
+autoatencion_rep_img: features/test SCREENSHOT=true ATTACH=true REPORT=true PROJECT=AUTOATENCION CLOSE=true --expand --format json --out ./features/reports/json/report_autoatencion_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json

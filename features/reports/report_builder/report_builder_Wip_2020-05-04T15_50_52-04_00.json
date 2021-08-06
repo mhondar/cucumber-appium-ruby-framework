@@ -1,0 +1,283 @@
+[
+  {
+    "uri": "features/test/AUTOATENCION_CL_TC01.feature",
+    "id": "autoatencion_cl_tc01",
+    "keyword": "Feature",
+    "name": "AUTOATENCION_CL_TC01",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "autoatencion_cl_tc01;tc01",
+        "keyword": "Scenario",
+        "name": "TC01",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@wip",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13677726000
+            },
+            "status": "passed",
+            "duration": 13677726000
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Abierta la aplicacion de autoatencion RPOST &quot;AUTOATENCION_TC01&quot;",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254000
+            },
+            "status": "passed",
+            "duration": 254000
+          },
+          {
+            "keyword": "When ",
+            "name": "En monitor configuro rut del empleador",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/configuration_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2254240000
+            },
+            "status": "passed",
+            "duration": 2254240000
+          },
+          {
+            "keyword": "And ",
+            "name": "Guardo y salgo del monitor",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/configuration_steps.rb:8"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "An element could not be located on the page using the given search parameters. (Selenium::WebDriver::Error::NoSuchElementError)\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)\n./features/page_objects/Monitor_page.rb:35:in `guardar_y_Salir'\n./features/step_definitions/configuration_steps.rb:9:in `\"Guardo y salgo del monitor\"'\nfeatures/test/AUTOATENCION_CL_TC01.feature:6:in `And Guardo y salgo del monitor'",
+              "duration": 30304695000
+            },
+            "status": "failed",
+            "duration": 30304695000
+          },
+          {
+            "keyword": "And ",
+            "name": "Realizo click en digitar codigo de producto",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Ingreso numero de producto",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Realizo click en RCLUBES",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Ingreso codigo RCLUBES",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Realizo click en Ingresar Codigo de Descuento",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Ingreso Codigo de Descuento",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Realizo click en pagar",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:47"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Ingreso rut de comprador &quot;rut_cliente&quot;",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Selecciono tarjeta &quot;ripley_card&quot;",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/pago_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Realizo click en Continuar",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/pago_steps.rb:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Imprimo boleta",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/step_3_steps.rb:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Realizo click en finalizar",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/step_3_steps.rb:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "Then ",
+            "name": "Verifico página de scan de productos presente",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/product_scan_steps.rb:7"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3566199000
+            },
+            "status": "passed",
+            "duration": 3566199000
+          }
+        ],
+        "status": "failed",
+        "duration": 49803114000
+      }
+    ],
+    "status": "broken",
+    "duration": 49803114000
+  }
+]
